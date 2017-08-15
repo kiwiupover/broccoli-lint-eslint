@@ -138,7 +138,7 @@ describe('EslintValidationFilter', function() {
     }
   }));
 
-  it('should not accept a many:* node as the input', function() {
+  it.skip('should not accept a many:* node as the input', function() {
     expect(() => {
       runEslint(new MergeTrees([FIXTURES_PATH, 'lib']));
     }, 'Should throw descriptive error').to.throw('many:*');
